@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design</title>
+    <style>
+        #container{
+            display:grid;
+            height:100vh;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+            grid-template-areas:
+             "header header header header"
+             "sidebar searchbar searchbar searchbar"
+             "sidebar card1 card2 card3"
+             "sidebar footer footer footer";
+             grid-gap: 10px;
+            
+        }
+
+        #header{background-color:rgb(5, 23, 56);
+                   grid-area:header;
+                   height:80px;
+                   color:white;
+                   text-align: center;
+                   font-size: larger;
+                 }
+        #sidebar{background-color: rgb(54, 54, 73);
+                   grid-area:sidebar;
+                   border-radius: 15px;
+                   margin-top: 30px;
+                   margin-left: 30px;
+                   margin-right: 30px;
+        }
+        #searchbar{background-color: rgb(54, 54, 73);
+                    color:darkseagreen;
+                    text-align:start;
+                    grid-area:searchbar;
+                    border-radius: 5px;
+                    height:30px;
+                    margin-top: 30px;
+                    margin-right: 50px;
+                    margin-left: 50px;
+        }
+        #card1{background-color: rgb(54, 54, 73);
+                    grid-area:card1;
+                    border-radius: 10px;
+                    margin-bottom: 40px;
+                    margin-right: 30px;
+                    margin-left: 30px;
+        }
+        #card2{background-color: rgb(54, 54, 73);
+                    grid-area:card2;
+                    border-radius: 10px;
+                    margin-bottom: 40px;
+                    margin-right: 30px;
+                    margin-left: 30px;
+        }
+        #card3{background-color: rgb(54, 54, 73);
+                    grid-area:card3;
+                    border-radius: 10px;
+                    margin-bottom: 40px;
+                    margin-right: 30px;
+                    margin-left: 30px;
+        }
+        #footer{background-color: rgb(54, 54, 73);
+                  grid-area:footer;
+                  border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container" >
+        <div id="header">GITHUB</div>
+        <div id="sidebar"></div>
+        <div id="searchbar">Search</div>
+        <div id="card1"></div>
+        <div id="card2"></div>
+        <div id="card3"></div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>
